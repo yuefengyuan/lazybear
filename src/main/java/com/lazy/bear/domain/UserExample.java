@@ -1,4 +1,4 @@
-package com.lazy.bear.dao;
+package com.lazy.bear.domain;
 
 import java.util.ArrayList;
 import java.util.List;

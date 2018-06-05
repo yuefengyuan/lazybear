@@ -1,4 +1,4 @@
-package com.lazy.bear.dao;
+package com.lazy.bear.domain;
 
 public class User {
     private Long id;

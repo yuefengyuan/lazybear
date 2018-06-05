@@ -1,7 +1,7 @@
-package com.lazy.bear.mapper;
+package com.lazy.bear.dao;
 
-import com.lazy.bear.dao.User;
-import com.lazy.bear.dao.UserExample;
+import com.lazy.bear.domain.User;
+import com.lazy.bear.domain.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
