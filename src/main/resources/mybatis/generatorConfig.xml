@@ -43,9 +43,17 @@
         <!-- 对注释进行控制 -->
         <commentGenerator>
             <!-- suppressDate是去掉生成日期那行注释 -->
+
+            <!--
             <property name="suppressDate" value="true"/>
-            <!-- suppressAllComments是去掉所有的注解 -->
+            -->
+
+            <!--
+            suppressAllComments是去掉所有的注解 开启这个注释xml文件只追加不覆盖
+            -->
+            <!--
             <property name="suppressAllComments" value="true"/>
+            -->
         </commentGenerator>
 
         <!--jdbc的数据库连接 -->
@@ -155,7 +163,7 @@
 
         <!-- 这里的百分号代表对该数据库中所有的表进行生成 -->
 
-        <table tableName="%" >
+        <table tableName="%" schema="demo">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
