@@ -4,5 +4,5 @@ import com.lazy.bear.domain.User;
 
 public interface UserService {
 
-    User getUser() ;
+    public User getUserById(long userId) throws Exception;
 }

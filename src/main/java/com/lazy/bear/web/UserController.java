@@ -13,18 +13,29 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    //@Autowired
-    //UserService userService;
+    @Autowired
+    UserService userService;
 
     @RequestMapping("/getuser")
-    public User getUser() {
+    public User getUser() throws Exception {
 
-        User user = new User();
+       /* User user = new User();
 
         user.setUserName("nick");
 
-        return user;
+        user.setEmail("ayuelei@163.com");
 
+        user.setId(123456L);
+
+        user.setNickName("nickName");
+
+        user.setPassWord("lyz");*/
+
+       User user = userService.getUserById(1);
+
+        return user;
     }
+
+
 
 }
